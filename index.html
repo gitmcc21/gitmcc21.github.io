@@ -1,0 +1,592 @@
+<script src="https://cdn03.jotfor.ms/static/prototype.forms.js?v=3.3.53821" type="text/javascript"></script>
+<script src="https://cdn01.jotfor.ms/static/jotform.forms.js?v=3.3.53821" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/vendor/maskedinput_5.0.9.min.js?v=3.3.53821" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/js/punycode-1.4.1.min.js?v=3.3.53821" type="text/javascript" defer></script>
+<script src="https://cdn01.jotfor.ms/s/umd/f4d32b5008a/for-widgets-server.js?v=3.3.53821" type="text/javascript"></script>
+
+<script src="https://cdn01.jotfor.ms/js/vendor/smoothscroll.min.js?v=3.3.53821" type="text/javascript"></script>
+<script src="https://cdn02.jotfor.ms/js/errorNavigation.js?v=3.3.53821" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = false;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.replaceTagTest = true;
+
+   JotForm.setConditions([{"action":[{"id":"action_0_1715533841977","visibility":"ShowMultiple","isError":false,"fields":["77","76","78","81","82","83","84","85","86","89"]}],"id":"1715532138701","index":"0","link":"Any","priority":"0","terms":[{"id":"term_0_1715533841977","field":"66","operator":"equals","value":"ya estoy inscrito, consutas.","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715532809138","visibility":"HideMultiple","isError":false,"fields":["54","51","35","36","38","44","42","41","46","67","47","66"]}],"id":"1715532105838","index":"1","link":"Any","priority":"1","terms":[{"id":"term_0_1715532809138","field":"66","operator":"equals","value":"ya estoy inscrito, consutas.","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715528928539","visibility":"Show","isError":false,"field":"35"}],"id":"1715150948279","index":"2","link":"All","priority":"2","terms":[{"id":"term_0_1715528928539","field":"51","operator":"equals","value":"cursillo de natación","isError":false},{"id":"term_1_1715528928539","field":"54","operator":"equals","value":"socio","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715528937766","visibility":"Show","isError":false,"field":"36"}],"id":"1715150962529","index":"3","link":"All","priority":"3","terms":[{"id":"term_0_1715528937766","field":"51","operator":"equals","value":"cursillo de natación","isError":false},{"id":"term_1_1715528937766","field":"54","operator":"equals","value":"invitado por socio","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715142585033","visibility":"Hide","isError":false,"field":"36"},{"id":"action_1_1715142585033","isError":false,"visibility":"Show","field":"35"}],"id":"1715142342552","index":"4","link":"All","priority":"4","terms":[{"id":"term_0_1715142585033","field":"51","operator":"equals","value":"ambos","isError":false},{"id":"term_1_1715142585033","field":"54","operator":"equals","value":"socio","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715142601873","visibility":"Hide","isError":false,"field":"35"},{"id":"action_1_1715142601873","isError":false,"visibility":"Show","field":"36"}],"id":"1715142352514","index":"5","link":"All","priority":"5","terms":[{"id":"term_0_1715142601873","field":"51","operator":"equals","value":"ambos","isError":false},{"id":"term_1_1715142601873","field":"54","operator":"equals","value":"invitado por socio","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715142051436","visibility":"Hide","isError":false,"field":"36"},{"id":"action_1_1715142051436","visibility":"Show","isError":false,"field":"35"}],"id":"1715141882372","index":"6","link":"All","priority":"6","terms":[{"id":"term_0_1715142051436","field":"51","operator":"equals","value":"escuela de verano","isError":false},{"id":"term_1_1715142051436","field":"54","operator":"equals","value":"socio","isError":false}],"type":"field"},{"action":[{"id":"action_0_1715142060103","visibility":"Hide","isError":false,"field":"35"},{"id":"action_1_1715142060103","visibility":"Show","isError":false,"field":"36"}],"id":"1715141890692","index":"7","link":"All","priority":"7","terms":[{"id":"term_0_1715142060103","field":"51","operator":"equals","value":"escuela de verano","isError":false},{"id":"term_1_1715142060103","field":"54","operator":"equals","value":"invitado por socio","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":221721612490044,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true})});	JotForm.isFullSource = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+
+ JotForm.calendarMonths = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+ if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};  JotForm.calenderViewMonths[44] = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+ if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};  JotForm.calenderViewDays[44] = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+ JotForm.calendarDays = ["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado","Domingo"];
+ JotForm.calendarOther = {"today":"Hoy"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("44", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("44", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+if (window.JotForm && JotForm.accessible) $('input_42').setAttribute('tabindex',0);
+      JotForm.setInputTextMasking( 'input_42', '\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_46').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_78').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_81').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_82').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_83').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_84').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_86').setAttribute('tabindex',0);
+      JotForm.alterTexts(undefined);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"name":"escuelaDe","qid":"30","text":"escuela de verano, cursillos de natacion 2024, INSCRIPCION","type":"control_head"},null,null,null,null,{"description":"","name":"eligeFechas","qid":"35","subLabel":"","text":"elige fechas (socio)","type":"control_dropdown"},{"description":"","name":"eligeFecha36","qid":"36","subLabel":"","text":"elige fecha (invitado)","type":"control_dropdown"},null,{"description":"","name":"nombre","qid":"38","text":"Nombre","type":"control_fullname"},null,null,{"description":"","name":"email","qid":"41","subLabel":"ejemplo@ejemplo.com","text":"Email","type":"control_email"},{"description":"","name":"telefono","qid":"42","subLabel":"","text":"telefono","type":"control_textbox"},null,{"description":"","name":"fechaDe","qid":"44","text":"Fecha de nacimiento ","type":"control_datetime"},null,{"description":"","mde":"No","name":"observaciones","qid":"46","subLabel":"","text":"Observaciones","type":"control_textarea","wysiwyg":"Disable"},{"name":"enviar","qid":"47","text":"Enviar","type":"control_button"},null,null,null,{"description":"","name":"1seleccione","qid":"51","text":"1-seleccione","type":"control_radio"},null,null,{"description":"","name":"2seleccione","qid":"54","text":"2-seleccione","type":"control_radio"},null,null,null,null,null,null,null,null,null,{"name":"divisor","qid":"64","text":"Divisor","type":"control_divider"},null,{"description":"","name":"mas","qid":"66","text":"Seleccionar","type":"control_radio"},{"description":"","name":"formaDe","qid":"67","text":"forma de pago","type":"control_radio"},null,null,null,null,null,null,null,null,{"name":"escribaUna","qid":"76","text":"NUMERO DE INSCRIPCION","type":"control_widget"},{"name":"consultaInscripcion","qid":"77","text":"consulta inscripcion","type":"control_head"},{"description":"","name":"escribaUna78","qid":"78","subLabel":"","text":"INSCRIPCION","type":"control_textbox"},null,null,{"description":"","name":"nombre81","qid":"81","subLabel":"","text":"NOMBRE","type":"control_textbox"},{"description":"","name":"apellido1","qid":"82","subLabel":"","text":"APELLIDO 1","type":"control_textbox"},{"description":"","name":"apellido2","qid":"83","subLabel":"","text":"APELLIDO 2","type":"control_textbox"},{"description":"","name":"fechas","qid":"84","subLabel":"","text":"FECHAS","type":"control_textbox"},{"description":"","name":"importeAbonado","qid":"85","subLabel":"","text":"IMPORTE ABONADO","type":"control_textbox"},{"description":"","name":"observaciones86","qid":"86","subLabel":"","text":"OBSERVACIONES","type":"control_textbox"},null,null,{"name":"input89","qid":"89","text":"  -\u003E ENVIAR POR E.MAIL\r\n \r\nREINICIAR","type":"control_text"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/stylebuilder/static/form-common.css?v=52028c3
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.53821&themeRevisionID=65660e4b326633110492e01a"/>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/css/styles/payment/payment_styles.css?3.3.53821" />
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_feature.css?3.3.53821" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/* Begining of advanced designer */
+/*PREFERENCES STYLE*/
+/*  1 - Preferences style */
+/*  1 - FONT FAMILY */
+.form-all {
+  font-family: "Inter", sans-serif;
+}
+/* 2 - FORM WIDTH */
+.form-all {
+  max-width: 752px;
+}
+/* 5 - FONT SIZE */
+.form-all {
+  font-size: 16px;
+}
+/* 5 - input bg color */
+.form-textbox,
+.form-textarea,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+  background-color: #ffffff;
+}
+/* 10 - LINE SPACING */
+.form-line {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.supernova .form-all,
+.form-all {
+  background-color: #d6e7ff;
+}
+.supernova {
+  background-color: #2461b7;
+}
+.supernova body {
+  background-color: transparent;
+}
+.form-all,
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label,
+span.FITB .qb-checkbox-label,
+span.FITB .qb-radiobox-label,
+span.FITB .form-radio label,
+span.FITB .form-checkbox label,
+[data-blotid][data-type=checkbox] [data-labelid],
+[data-blotid][data-type=radiobox] [data-labelid],
+span.FITB-inptCont[data-type=checkbox] label,
+span.FITB-inptCont[data-type=radiobox] label,
+.form-sub-label {
+  color: #12458c;
+}
+/*PREFERENCES STYLE*/
+/* 17 - INPUT WIDTHS */
+/*  20 - FORM PADDING */
+ul.form-section {
+  padding: 0px 38px;
+}
+/* Heights */
+/* 11 - LINE PADDING */
+/* LABEL STYLE */
+/* 12 - ROUNDED INPUTS */
+.supernova .form-all,
+.form-all {
+  border-radius: 20px;
+}
+.form-section:first-child {
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  border-radius: 0 0 20px 20px;
+}
+.form-radio-item,
+.form-checkbox-item {
+  padding-bottom: 0px;
+}
+.form-radio-item:last-child,
+.form-checkbox-item:last-child {
+  padding-bottom: 0;
+}
+.form-checkbox + label,
+.form-checkbox + span,
+.form-radio + label,
+.form-radio + span {
+  padding-left: 30px;
+}
+.form-single-column .form-checkbox-item,
+.form-single-column .form-radio-item {
+  width: 100%;
+}
+.form-checkbox-item .editor-container div,
+.form-radio-item .editor-container div {
+  position: relative;
+}
+.form-checkbox-item .editor-container div:before,
+.form-radio-item .editor-container div:before {
+  display: inline-block;
+  vertical-align: middle;
+  left: 0;
+  width: 20px;
+  height: 20px;
+}
+.form-checkbox-item input,
+.form-radio-item input {
+  margin-top: 2px;
+}
+.form-checkbox:checked + label:before,
+.form-checkbox:checked + span:before {
+  background-color: #2e69ff;
+  border-color: #2e69ff;
+}
+.form-radio:checked + label:before,
+.form-radio:checked + span:before {
+  border-color: #2e69ff;
+}
+.form-radio:checked + label:after,
+.form-radio:checked + span:after {
+  background-color: #2e69ff;
+}
+.form-checkbox:hover + label:before,
+.form-checkbox:hover + span:before,
+.form-radio:hover + label:before,
+.form-radio:hover + span:before {
+  border-color: rgba(46, 105, 255, 0.5);
+  box-shadow: 0 0 0 2px rgba(46, 105, 255, 0.25);
+}
+.form-checkbox:focus + label:before,
+.form-checkbox:focus + span:before,
+.form-radio:focus + label:before,
+.form-radio:focus + span:before {
+  border-color: #2e69ff;
+  box-shadow: 0 0 0 3px rgba(46, 105, 255, 0.25);
+}
+.submit-button {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: inherit;
+}
+.submit-button {
+  min-width: 180px;
+}
+li[data-type="control_button"] .form-submit-button {
+  color: #ffffff;
+  background-color: #12458c;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+li[data-type="control_button"] .form-submit-button:hover {
+  background-color: #061832;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-sacl-button,
+li[data-type="control_button"] button.jf-form-buttons.form-submit-print {
+  color: #12458c;
+  border-color: #12458c;
+  background-image: none;
+  background-color: #fff;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-sacl-button:hover,
+li[data-type="control_button"] button.jf-form-buttons.form-submit-print:hover {
+  background-color: #061832;
+  color: #fff;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back {
+  background-image: none;
+  background-color: #061832;
+  box-shadow: none;
+  text-shadow: none;
+}
+li[data-type="control_button"] button.jf-form-buttons.form-pagebreak-back:hover {
+  background-color: #010204;
+  color: #fff;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.form-all .form-pagebreak-back,
+.form-all .form-pagebreak-next {
+  min-width: 128px;
+}
+li[data-type="control_image"] div {
+  text-align: left;
+}
+li[data-type="control_image"] img {
+  border: none;
+  border-width: 0px !important;
+  border-style: solid !important;
+  border-color: false !important;
+}
+.supernova {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: auto;
+  background-size: cover;
+}
+.supernova {
+  background-image: none;
+}
+#stage {
+  background-image: none;
+}
+/* | */
+.form-all {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
+}
+.form-header-group {
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+}
+.header-large h1.form-header {
+  font-size: 2em;
+}
+.header-large h2.form-header {
+  font-size: 1.5em;
+}
+.header-large h3.form-header {
+  font-size: 1.17em;
+}
+.header-large h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-large h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-large h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-default h1.form-header {
+  font-size: 2em;
+}
+.header-default h2.form-header {
+  font-size: 1.5em;
+}
+.header-default h3.form-header {
+  font-size: 1.17em;
+}
+.header-default h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-default h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-default h3 + .form-subHeader {
+  font-size: .75em;
+}
+.header-small h1.form-header {
+  font-size: 2em;
+}
+.header-small h2.form-header {
+  font-size: 1.5em;
+}
+.header-small h3.form-header {
+  font-size: 1.17em;
+}
+.header-small h1 + .form-subHeader {
+  font-size: 1em;
+}
+.header-small h2 + .form-subHeader {
+  font-size: .875em;
+}
+.header-small h3 + .form-subHeader {
+  font-size: .75em;
+}
+.form-header-group {
+  text-align: left;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  margin: 0px -38px;
+}
+div.form-header-group.header-large,
+div.form-header-group.hasImage {
+  padding: 40px 52px;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #12458c;
+}
+.form-line-error {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #ffd6d6;
+}
+.form-line-error .form-error-message {
+  background-color: #f23a3c;
+  clear: both;
+  float: none;
+}
+.form-line-error .form-error-message .form-error-arrow {
+  border-bottom-color: #f23a3c;
+}
+.form-line-error input:not(#coupon-input),
+.form-line-error textarea,
+.form-line-error .form-validation-error {
+  border: 1px solid #f23a3c;
+  box-shadow: 0 0 3px #f23a3c;
+}
+.form-line-error {
+  -webkit-transition-property: none;
+  -moz-transition-property: none;
+  -ms-transition-property: none;
+  -o-transition-property: none;
+  transition-property: none;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  background-color: #ffd6d6;
+}
+.form-header-group .form-header,
+.form-header-group .form-subHeader {
+  color: #12458c;
+}
+.form-line-active {
+  background-color: #f1f5ff;
+}
+/* 29 - FORM COLUMNS */
+
+/*__INSPECT_SEPERATOR__*/
+
+
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://eu-submit.jotform.com/submit/221721612490044" method="post" name="form_221721612490044" id="221721612490044" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="221721612490044" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1715534711427" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="buildDate" name="buildDate" value="1715534711427" />
+  <div id="formCoverLogo" style="margin-bottom:32px" class="form-cover-wrapper form-has-cover form-page-cover-image-align-center">
+    <div class="form-page-cover-image-wrapper" style="max-width:752px"><img src="https://www.jotform.com/uploads/CNUTIEL/form_files/CNU.6273869246c8d6.52220537.png" class="form-page-cover-image" width="140" aria-label="Form Logo" style="aspect-ratio:140/141" /></div>
+  </div>
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_30" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_30" class="form-header" data-component="header">escuela de verano, cursillos de natación 2024, INSCRIPCIÓN</h1>
+            <div id="subHeader_30" class="form-subHeader">rellene el formulario y le remitiremos su hoja de inscripción </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_radio" id="id_66"><label class="form-label form-label-left form-label-auto" id="label_66" aria-hidden="false"> Seleccionar<span class="form-required">*</span> </label>
+        <div id="cid_66" class="form-input jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_66" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_66" class="form-radio validate[required]" id="input_66_0" name="q66_mas" value="nueva Inscripcción" required="" /><label id="label_input_66_0" for="input_66_0">nueva Inscripcción</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_66" class="form-radio validate[required]" id="input_66_1" name="q66_mas" value="ya estoy inscrito, consutas." required="" /><label id="label_input_66_1" for="input_66_1">ya estoy inscrito, consutas.</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_radio" id="id_54"><label class="form-label form-label-left form-label-auto" id="label_54" aria-hidden="false"> 2-seleccione<span class="form-required">*</span> </label>
+        <div id="cid_54" class="form-input jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_54" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_54" class="form-radio validate[required]" id="input_54_0" name="q54_2seleccione" value="socio" required="" /><label id="label_input_54_0" for="input_54_0">socio</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_54" class="form-radio validate[required]" id="input_54_1" name="q54_2seleccione" value="invitado por socio" required="" /><label id="label_input_54_1" for="input_54_1">invitado por socio</label></span></div>
+        </div>
+      </li>
+      <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_radio" id="id_51"><label class="form-label form-label-left form-label-auto" id="label_51" aria-hidden="false"> 1-seleccione<span class="form-required">*</span> </label>
+        <div id="cid_51" class="form-input jf-required" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_51" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_51" class="form-radio validate[required]" id="input_51_0" name="q51_1seleccione" value="escuela de verano" required="" /><label id="label_input_51_0" for="input_51_0">escuela de verano</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_51" class="form-radio validate[required]" id="input_51_1" name="q51_1seleccione" value="cursillo de natación" required="" /><label id="label_input_51_1" for="input_51_1">cursillo de natación</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_51" class="form-radio validate[required]" id="input_51_2" name="q51_1seleccione" value="ambos" required="" /><label id="label_input_51_2" for="input_51_2">ambos</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden jf-required form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_35"><label class="form-label form-label-left form-label-auto" id="label_35" for="input_35" aria-hidden="false"> elige fechas (socio)<span class="form-required">*</span> </label>
+        <div id="cid_35" class="form-input always-hidden jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_35" name="q35_eligeFechas" style="width:310px" data-component="dropdown" required="" aria-label="elige fechas (socio)">
+            <option value="">Seleccione</option>
+            <option value="-SEMANA DEL 25 AL 28 DE JUNIO 20 €">-SEMANA DEL 25 AL 28 DE JUNIO 20 €</option>
+            <option value="-MES ENTERO 75 €">-MES ENTERO 75 €</option>
+            <option value="-QUINCENA 40 €">-QUINCENA 40 €</option>
+            <option value="-TODO EL VERANO 150 €">-TODO EL VERANO 150 €</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_36"><label class="form-label form-label-left form-label-auto" id="label_36" for="input_36" aria-hidden="false"> elige fecha (invitado) </label>
+        <div id="cid_36" class="form-input always-hidden" data-layout="half"> <select class="form-dropdown" id="input_36" name="q36_eligeFecha36" style="width:310px" data-component="dropdown" aria-label="elige fecha (invitado)">
+            <option value="">Seleccione</option>
+            <option value="-SEMANA DEL 25AL 28 DE JUNIO 40 €">-SEMANA DEL 25AL 28 DE JUNIO 40 €</option>
+            <option value="-MES ENTERO 150 €">-MES ENTERO 150 €</option>
+            <option value="-QUINCENA 80 €">-QUINCENA 80 €</option>
+            <option value="-TODO EL VERANO 300 €">-TODO EL VERANO 300 €</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_fullname" id="id_38"><label class="form-label form-label-top form-label-extended form-label-auto" id="label_38" for="first_38" aria-hidden="false"> Nombre </label>
+        <div id="cid_38" class="form-input-wide" data-layout="full">
+          <div data-wrapper-react="true" class="extended"><span class="form-sub-label-container" style="vertical-align:top" data-input-type="first"><input type="text" id="first_38" name="q38_nombre[first]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_38 given-name" size="10" data-component="first" aria-labelledby="label_38 sublabel_38_first" value="" /><label class="form-sub-label" for="first_38" id="sublabel_38_first" style="min-height:13px">Nombre</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="middle"><input type="text" id="middle_38" name="q38_nombre[middle]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_38 additional-name" size="10" data-component="middle" aria-labelledby="label_38 sublabel_38_middle" value="" /><label class="form-sub-label" for="middle_38" id="sublabel_38_middle" style="min-height:13px">Apellido</label></span><span class="form-sub-label-container" style="vertical-align:top" data-input-type="last"><input type="text" id="last_38" name="q38_nombre[last]" class="form-textbox" data-defaultvalue="" autoComplete="section-input_38 family-name" size="15" data-component="last" aria-labelledby="label_38 sublabel_38_last" value="" /><label class="form-sub-label" for="last_38" id="sublabel_38_last" style="min-height:13px">Apellido</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_datetime" id="id_44"><label class="form-label form-label-left form-label-auto" id="label_44" for="lite_mode_44" aria-hidden="false"> Fecha de nacimiento </label>
+        <div id="cid_44" class="form-input" data-layout="half">
+          <div data-wrapper-react="true">
+            <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="month_44" name="q44_fechaDe[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_44 sublabel_44_month" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="month_44" id="sublabel_44_month" style="min-height:13px">Mes</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="day_44" name="q44_fechaDe[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="" autoComplete="off" aria-labelledby="label_44 sublabel_44_day" /><span class="date-separate" aria-hidden="true"> -</span><label class="form-sub-label" for="day_44" id="sublabel_44_day" style="min-height:13px">Día</label></span><span class="form-sub-label-container" style="vertical-align:top"><input type="tel" class="form-textbox validate[limitDate]" id="year_44" name="q44_fechaDe[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="" autoComplete="off" aria-labelledby="label_44 sublabel_44_year" /><label class="form-sub-label" for="year_44" id="sublabel_44_year" style="min-height:13px">Año</label></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_44" size="12" data-maxlength="12" maxLength="12" data-age="" value="" data-format="mmddyyyy" data-seperator="-" placeholder="MM-DD-YYYY" data-placeholder="MM-DD-YYYY" autoComplete="off" aria-labelledby="label_44 sublabel_44_litemode" /><img class=" newDefaultTheme-dateIcon icon-liteMode" alt="Pick a Date" id="input_44_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" /><label class="form-sub-label" for="lite_mode_44" id="sublabel_44_litemode" style="min-height:13px">Fecha</label></span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required form-field-hidden" style="display:none;" data-type="control_textbox" id="id_42"><label class="form-label form-label-left form-label-auto" id="label_42" for="input_42" aria-hidden="false"> teléfono<span class="form-required">*</span> </label>
+        <div id="cid_42" class="form-input jf-required" data-layout="half"> <input type="text" id="input_42" name="q42_telefono" data-type="input-textbox" class="form-textbox validate[required, Fill Mask]" data-defaultvalue="" style="width:310px" size="310" data-masked="true" data-component="textbox" aria-labelledby="label_42" required="" value="" /> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_email" id="id_41"><label class="form-label form-label-left form-label-auto" id="label_41" for="input_41" aria-hidden="false"> Email </label>
+        <div id="cid_41" class="form-input" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_41" name="q41_email" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_41 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_41 sublabel_input_41" value="" /><label class="form-sub-label" for="input_41" id="sublabel_input_41" style="min-height:13px">ejemplo@ejemplo.com</label></span> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_textarea" id="id_46"><label class="form-label form-label-left form-label-auto" id="label_46" for="input_46" aria-hidden="false"> Observaciones </label>
+        <div id="cid_46" class="form-input" data-layout="full"> <textarea id="input_46" class="form-textarea" name="q46_observaciones" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_46"></textarea> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_radio" id="id_67"><label class="form-label form-label-left form-label-auto" id="label_67" aria-hidden="false"> forma de pago </label>
+        <div id="cid_67" class="form-input" data-layout="full">
+          <div class="form-single-column" role="group" aria-labelledby="label_67" data-component="radio"><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_67" class="form-radio" id="input_67_0" name="q67_formaDe" value="en nuestra oficina (efectivo o tarjeta)" /><label id="label_input_67_0" for="input_67_0">en nuestra oficina (efectivo o tarjeta)</label></span><span class="form-radio-item" style="clear:left"><span class="dragger-item"></span><input type="radio" aria-describedby="label_67" class="form-radio" id="input_67_1" name="q67_formaDe" value="transferencia bancaria, se le facilitará con la hoja de inscripción" /><label id="label_input_67_1" for="input_67_1">transferencia bancaria, se le facilitará con la hoja de inscripción</label></span></div>
+        </div>
+      </li>
+      <li id="cid_77" class="form-input-wide always-hidden form-field-hidden" style="display:none;" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_77" class="form-header" data-component="header">consulta inscripción</h2>
+            <div id="subHeader_77" class="form-subHeader">puede consultar el estado de su inscripción por el número facilitado en la misma</div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_widget" id="id_76"><label class="form-label form-label-left form-label-auto" id="label_76" for="input_76" aria-hidden="false"> NÚMERO DE INSCRIPCIÓN </label>
+        <div id="cid_76" class="form-input always-hidden" data-layout="full">
+          <div data-widget-name="Hoja de cálculo a formulario" style="width:100%;text-align:Left;overflow-x:auto" data-component="widget-field"><iframe data-client-id="591dafece4a223da050009f9" title="Hoja de cálculo a formulario" frameBorder="0" scrolling="no" allowtransparency="true" allow="geolocation; microphone; camera; autoplay; encrypted-media; fullscreen" data-type="iframe" class="custom-field-frame" id="customFieldFrame_76" src="" style="max-width:230px;border:none;width:100%;height:80px" data-width="230" data-height="80"></iframe>
+            <div class="widget-inputs-wrapper"><input type="hidden" id="input_76" class="form-hidden form-widget  " name="q76_escribaUna" value="" /><input type="hidden" id="widget_settings_76" class="form-hidden form-widget-settings" value="%5B%7B%22name%22%3A%22spreadsheet%22%2C%22value%22%3A%7B%22size%22%3A%229026%22%2C%22fileName%22%3A%22ESCUELA%20DE%20VERANO%202024%20HOJA%20DE%20CONSULTAS.xlsx%22%2C%22qid%22%3A%2276%22%2C%22sheet%22%3A%22Hoja1%22%2C%22accessCode%22%3A%22N%C3%9AMERO%22%7D%7D%2C%7B%22name%22%3A%22excel%22%2C%22value%22%3A%22undefined%22%7D%2C%7B%22name%22%3A%22codeColumn%22%2C%22value%22%3A%22A%22%7D%2C%7B%22name%22%3A%22labelsRow%22%2C%22value%22%3A%221%22%7D%2C%7B%22name%22%3A%22fillBtnText%22%2C%22value%22%3A%22CONSULTAR%22%7D%2C%7B%22name%22%3A%22loadingText%22%2C%22value%22%3A%22Cargando...%22%7D%2C%7B%22name%22%3A%22validCodeTxt%22%2C%22value%22%3A%22registro%20encontrado%22%7D%2C%7B%22name%22%3A%22invalidCodeTxt%22%2C%22value%22%3A%22registro%20no%20encontrado%22%7D%2C%7B%22name%22%3A%22submitInput%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22autofillByCondition%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22hide%22%2C%22value%22%3A%22No%22%7D%2C%7B%22name%22%3A%22apiKey%22%2C%22value%22%3A%22encrypted%3A09%2FLnA9aZ6F0ntHMTFNbqeTBBRvye1Px%2BxHa%2BHLO6VXDCzVO9kqEAzE9QTL4foNj0WYdqBuBD2v77ET%2BClDRgG9nc6aJNzKNU%2F7z1rbZ21tVyxUoz48%2Ff3bMzOwe2Jc7%22%7D%5D" data-version="2" /></div>
+            <script type="text/javascript">
+              setTimeout(function()
+              {
+                var _cFieldFrame = document.getElementById("customFieldFrame_76");
+                if (_cFieldFrame)
+                {
+                  _cFieldFrame.onload = function()
+                  {
+                    if (typeof widgetFrameLoaded !== 'undefined')
+                    {
+                      widgetFrameLoaded(76,
+                      {
+                        "formID": 221721612490044
+                      })
+                    }
+                  };
+                  _cFieldFrame.src = "//app-widgets.jotform.io/spreadsheettoform/?qid=76&isOpenedInPortal=undefined&align=Left&ref=" +
+                    encodeURIComponent(window.location.protocol + "//" + window.location.host) + '' + '' + '' +
+                    '&injectCSS=' + encodeURIComponent(window.location.search.indexOf("ndt=1") > -1);
+                  _cFieldFrame.addClassName("custom-field-frame-rendered");
+                }
+              }, 0);
+            </script>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_78"><label class="form-label form-label-left form-label-auto" id="label_78" for="input_78" aria-hidden="false"> INSCRIPCIÓN </label>
+        <div id="cid_78" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_78" name="q78_escribaUna78" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_78" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_81"><label class="form-label form-label-left form-label-auto" id="label_81" for="input_81" aria-hidden="false"> NOMBRE </label>
+        <div id="cid_81" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_81" name="q81_nombre81" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_81" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_82"><label class="form-label form-label-left form-label-auto" id="label_82" for="input_82" aria-hidden="false"> APELLIDO 1 </label>
+        <div id="cid_82" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_82" name="q82_apellido1" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_82" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_83"><label class="form-label form-label-left form-label-auto" id="label_83" for="input_83" aria-hidden="false"> APELLIDO 2 </label>
+        <div id="cid_83" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_83" name="q83_apellido2" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_83" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_84"><label class="form-label form-label-left form-label-auto" id="label_84" for="input_84" aria-hidden="false"> FECHAS </label>
+        <div id="cid_84" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_84" name="q84_fechas" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_84" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_85"><label class="form-label form-label-left form-label-auto" id="label_85" for="input_85" aria-hidden="false"> IMPORTE ABONADO </label>
+        <div id="cid_85" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_85" name="q85_importeAbonado" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_85" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_86"><label class="form-label form-label-left form-label-auto" id="label_86" for="input_86" aria-hidden="false"> OBSERVACIONES </label>
+        <div id="cid_86" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_86" name="q86_observaciones86" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_86" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_64">
+        <div id="cid_64" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_89">
+        <div id="cid_89" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_89" class="form-html" data-component="text" tabindex="0">
+            <p>  <span style="text-decoration: underline; color: #ea3223;"><a style="color: #ea3223; text-decoration: underline;" href="mailto:" target="_blank" rel="nofollow">-&gt; ENVIAR POR E.MAIL</a></span></p>
+            <p> </p>
+            <p><span style="color: #ea3223;"><a style="color: #ea3223;" href="https://www.cnutiel.com/rererva_full_ev.html" target="_blank" rel="nofollow">REINICIAR</a></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_button" id="id_47">
+        <div id="cid_47" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><span> </span><button id="input_print_47" type="button" class="form-submit-print jf-form-buttons" data-component="button"><img src="https://cdn.jotfor.ms/images/printer.png" style="vertical-align:middle" alt="Print" /><span id="span_print_47" class="span_print">Imprimir</span></button><button id="input_47" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Enviar</button></div>
+          <div class="form-submit-clear-wrapper"><button id="input_reset_47" type="reset" class="form-submit-reset jf-form-buttons" data-component="button">BORRAR</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="221721612490044" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='221721612490044'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "221721612490044-221721612490044";
+    }
+  </script>
+</form>
+<link id=color-scheme-style href="https://cdn01.jotfor.ms/stylebuilder/static/color-scheme.css?v=3.3.53821" type="text/css" rel="stylesheet" /><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.forwardToEu=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
